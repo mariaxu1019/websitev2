@@ -8,7 +8,7 @@
 */
 
 // Logo
-import bl33hIcon from './logo/bl33hIcon.png';
+import bl33hIcon from './logo/logo.png';
 
 // Technologies
 import htmlIcon from './tech/html.png';
@@ -31,12 +31,12 @@ import close from './close.svg';
 import menu from './menu.svg';
 
 // Projects
-import pawsitivePrototype from './projects/pawsitive.jpeg';
+import pawsitivePrototype from './projects/restaurant.jpg';
 import calculator from './projects/calculator.jpg';
-import memoryGame from './projects/memory.jpg';
+import memoryGame from './projects/healium.jpeg';
 
 // Avatar
-import avatar from './avatar/avatar.png';
+import avatar from './avatar/coverpic.png';
 
 export {
   menu,

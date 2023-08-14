@@ -19,7 +19,7 @@ const SkillsCards = () => {
         <m.div
           initial={{ scale: 0.8 }}
           animate={{
-            rotate: [0, 10, 0],
+            rotate: [0, 0, 0],
           }}
           transition={{
             duration: 1,
@@ -27,30 +27,33 @@ const SkillsCards = () => {
             repeatType: "loop",
             ease: "linear",
           }}
-          style={{ zIndex: `${index + 1}`, transition: "all 0.6s" }}
+          style={{ zIndex: `${index + 1}`, transition: "all 0.6s", color: "#e6e6ed"}}
           key={index}
-          className="card w-[300px] h-[300px] flex flex-col items-center  bg-primary-400 rounded-xl border-4 border-primary-600 cursor-pointer"
+          className="card w-[300px] h-[300px] flex flex-col items-center  bg-primary-400 rounded-xl border-4 border-primary-600 cursor-pointer text-[#562b3b]"
+          style={{backgroundColor: "#cbbdbc", borderColor: "#cbbdbc"}}
         >
           <div className="w-full h-[60px] flex items-center gap-2 p-1 flex-col">
             <img
-              className="h-[50px] flex justify-center items-center w-[50px]  bg-primary-600 rounded-[50%] p-1 object-contain"
+              className="h-[50px] flex justify-center items-center w-[50px]  bg-primary-600 rounded-[50%] p-1 object-contain text-[#562b3b]"
               src={skill.icon}
               alt={skill.title}
+              style={{ paddingTop: "20px", backgroundColor: "#cbbdbc"}}
             />
             <span
               className="text-xl"
               style={{
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: "PT Serif, sans-serif",
                 fontWeight: "bold",
               }}
             >
               {skill.title}
             </span>
             <span
-              className="text-center bg-primary-400 text-grayscale-950 rounded-xl text-sm p-4"
+              className="text-center bg-primary-400 text-grayscale-950 rounded-xl text-sm p-4 text-[#562b3b]"
               style={{
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: "PT Serif, sans-serif",
                 fontWeight: "400",
+                backgroundColor: "#cbbdbc"
               }}
             >
               {skill.description}

@@ -81,13 +81,13 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there, I'm so happy you are here! (:",
+    "Welcome! Thanks for being here :)",
 
-    "My name is Sara, I'm 20 and a third year computer science student based in Guatemala. I have a strong passion for the technologies related to the data base construction and UX.",
+    "My name is Maria (ma-rye-ah) Xu and I am a sophomore at UC Berkeley studying Electrical Engineering and Computer Science. I am especially interested in technology related to data analytics and artificial intelligence.",
 
-    "Outside of my regular activities, I'm into drawing whenever I have some free time. I'm also a huge dog lover and enjoy playing chess for fun.",
+    "Outside of academics and work, I enjoy cooking and baking. I also love traveling and anything art-related.",
 
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences. Your visit to my portfolio is deeply appreciated !",
+    "I'm excited to bring my technical skills, enthusiasm, and dedication to anywhere I go and hope to continue exploring my passions through various work experiences.",
   ],
 };
 
@@ -112,18 +112,16 @@ export const navLinks = [
 
 const projects = [
   {
-    name: "Arasartara's Gallery",
-    description: 'A memory game with an art theme implemented with React. Test your memory skills and enjoy beautiful artwork as you match pairs of cards in this engaging game.',
+    name: "Healium",
+    description: 'An on-chain hospital billing system that leverages blockchain technology and Solidity to revolutionize the billing process in the healthcare industry',
     image: memoryGame,
-    source_code_link: 'https://github.com/bl33h/artMemoryGame',
-    demo_link: 'https://arasarmemory.netlify.app/',
+    source_code_link: 'https://github.com/mariaxu1019/Healium',
   },
   {
-    name: 'Pawsitive',
-    description: 'Explore a user-friendly Figma prototype for an adoption and sterilization awareness website. Experience the sleek design and contribute to a noble cause.',
+    name: 'Demand Forecasting',
+    description: 'Explored effect of COVID-19 on food supply chain and created demand forecasting algorithm with Scikit Learn to help local restaurant reduce food waste',
     image: pawsitivePrototype,
-    source_code_link: 'https://github.com/bl33h/pawsitive',
-    demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
+    source_code_link: 'https://medium.com/@muyangxu1019/restaurant-demand-forecasting-following-covid-19-32ddac5a1638',
   },
   {
     name: 'Basic Calculator',

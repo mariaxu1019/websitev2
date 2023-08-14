@@ -15,7 +15,7 @@ const MarqueeCards = ({children, direction}) => {
     <Marquee
       direction={direction}
       gradient={false}
-      speed={100}
+      speed={10}
       pauseOnHover={true}
     >
       {children}

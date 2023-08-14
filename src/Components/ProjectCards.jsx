@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { styles } from '../styles'
 import { projects } from "../Constants/constants";
 import { Tilt } from "react-tilt";
-import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
@@ -135,6 +134,7 @@ const SectionWrapper = (Component, idName) =>
           className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
           style={{ marginTop: '-120%' }}
           >
+            
           <div
             className="relative w-full h-[180px]"
           >
@@ -145,39 +145,20 @@ const SectionWrapper = (Component, idName) =>
             />
             <div
               className="absolute inset-0 flex justify-end m-3 card-img_hover"
-            >
-              <div
-                onClick={() => window.open
+              onClick={() => window.open
                 (source_code_link, "_blank")}
-                className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-              >
-               <img 
-                src={githubIcon}
-                alt="github"
-                className="w-15 h-15 object-contain"
-                />
-              </div>
+            >
             </div>
           </div>
   
           <div className="mt-3">
-            <h3 className="text-white font-bold text-[20px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
+            <h3 
+             className="text-white font-bold text-[20px]" style={{color: "#5D4F4C", fontFamily: "PT Serif"}}>{name}</h3>
+            <p className="mt-2 text-secondary text-[14px] leading-[18px]" style={{color: "#5D4F4C", fontFamily: "PT Serif"}}>{description}</p>
           </div>
           <div
             className="mt-2 flex flex-wrap gap-1"
           >
-          </div>
-          <div 
-            className="mt-3 flex justify-center items-center"
-          >
-            <a 
-              className="shadow-md shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
-              href={demo_link}
-              target='_blank'
-            >
-              See the Demo
-            </a>
           </div>
         </Tilt>
       </motion.div>

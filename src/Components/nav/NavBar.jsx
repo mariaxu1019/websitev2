@@ -33,11 +33,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={bl33hIcon} alt={bl33hIcon} className="w-18 h-9 object-contain" />
+          <img src={bl33hIcon} alt={bl33hIcon} className="w-25 h-16 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10"  style={{ color: '#FFFFFF' }}>
+        <ul className="list-none hidden sm:flex flex-row gap-10"  style={{ color: '#562b3b' }}>
           {navLinks.map((link) => {
             return (
               <li
@@ -46,6 +46,7 @@ const Navbar = () => {
                   active === link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer `}
                 onClick={() => setActive(link.title)}
+                style={{fontFamily: "PT Serif, serif", fontWeight: "700"}}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
@@ -71,7 +72,7 @@ const Navbar = () => {
                     key={link.id}
                     className={`${
                       active === link.title ? "text-white" : "text-secondary"
-                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                    } font-serif font-medium cursor-pointer text-[16px]`}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(!toggle);

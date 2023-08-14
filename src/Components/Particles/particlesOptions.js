@@ -96,7 +96,7 @@ export const heroOptions = {
         duration: 0.4,
         size: 40,
         color: {
-          value: '#cbbde5',
+          value: '#562b3b',
         },
         opacity: 8,
         mix: false,
@@ -117,7 +117,7 @@ export const heroOptions = {
       mode: 'bounce',
     },
     color: {
-      value: '#fff',
+      value: '#7c6b68',
     },
     move: {
       angle: {
@@ -166,30 +166,30 @@ export const heroOptions = {
       character: [
         {
           fill: true,
-          font: 'Font Awesome 6 Brands',
+          font: 'Font Awesome 6 Solid',
           style: '',
-          value: ['\uf13b'],
+          value: ['✵'],
           weight: '400',
         },
         {
           fill: true,
           font: 'Font Awesome 6 Brands',
           style: '',
-          value: ['\uf38b'],
+          value: ['✧'],
           weight: '400',
         },
         {
           fill: true,
           font: 'Font Awesome 6 Brands',
           style: '',
-          value: ['\uf3b9'],
+          value: ['❅'],
           weight: '400',
         },
         {
           fill: true,
           font: 'Font Awesome 6 Brands',
           style: '',
-          value: ['\uf41b'],
+          value: ['˚ · •'],
           weight: '400',
         },
       ],
@@ -215,7 +215,7 @@ export const heroOptions = {
     lineLinked: {
       blink: false,
       color: {
-        value: '#ffffff',
+        value: '#cbbdbc',
       },
       consent: true,
       distance: 100,

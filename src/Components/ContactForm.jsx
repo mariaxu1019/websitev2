@@ -19,16 +19,16 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "whoisbl33h",
-      "template1",
+      "service_mariaxu",
+      "template_vso0a17",
       e.target,
-      "JjC_Nnt4rUsjIsRtz"
+      "bEhX99lccJiU_ngdR"
     )
       .then(
         (result) => {
           document.getElementById("contact_form").reset();
           setIsSent(true);
-          alert('Thank you I will get back to you as soon as possible ! (:');
+          alert('Thank you, I will get back to you as soon as possible :)');
         },
         (error) => {
           console.error(error);
@@ -43,16 +43,16 @@ const ContactForm = () => {
     backgroundImage:
       "url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png)",
     width: "80%",
-    height: "96%",
-    boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+    height: "93%",
+    boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
   }}
 >
       <div>
         <h2
-          style={{ fontFamily: "Morganite Bold, sans-serif" }}
-          className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
+          style={{ fontFamily: "GoodVibes, sans-serif", padding: "20px 0", backgroundColor: "#562b3b" }}
+          className="message text-6xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
         >
-          <Typewriter words={["Let's get in touch!"]} loop={true} />
+          <Typewriter words={["Get in touch with me"]} loop={false} />
           &nbsp;
         </h2>
       </div>
@@ -63,7 +63,7 @@ const ContactForm = () => {
           method="POST"
           target="_blank"
           onSubmit={sendEmail}
-          style={{ fontFamily: "Poppins, sans-serif" }}
+          style={{ fontFamily: "PT Serif, sans-serif" }}
           className="w-[80%] h-full flex flex-col gap-4 pt-4 text-grayscale-200"
         >
           <div className="w-full flex flex-col">
@@ -89,10 +89,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="email">E-mail</label>
+            <label htmlFor="email">Email</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your E-mail"
+              placeholder="Enter your e-mail"
               id="email"
               type="email"
               name="from_email"
@@ -111,8 +111,9 @@ const ContactForm = () => {
           <div className="w-full flex justify-center">
             <input
               className="w-[100px] h-[50px] bg-primary-600 rounded-xl cursor-pointer hover:bg-primary-700"
+              style={{backgroundColor: "#562b3b"}}
               type="submit"
-              value={!isSent ? 'Send' : 'Done!'}
+              value={!isSent ? 'Send' : 'Send'}
               
             />
           </div>

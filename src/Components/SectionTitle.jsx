@@ -24,15 +24,16 @@ const SectionTitle = (props) => {
           className="opacity-50"
           style={{
             textTransform: "uppercase",
-            fontFamily: "Poppins, sans-serif",
-            fontWeight: "600",
+            fontFamily: "PT Serif, sans-serif",
+            fontWeight: "700",
+            color: "#562b3b"
           }}
         >
           {subtitle}
         </span>
         <h2
           className="tracking-wider text-7xl sm:text-8xl md:text-9xl"
-          style={{ fontFamily: "Morganite Black"}}
+          style={{ fontFamily: "GoodVibes", color: "#562b3b", fontSize: "5rem", marginTop: "20px"}}
         >
           {title.split("").map((char, index) => {
             if(char === " ") {
